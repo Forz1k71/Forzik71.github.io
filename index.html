@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Персональное портфолио: навыки, проекты и достижения.">
+  <title>Моё портфолио</title>
+  <style>
+    :root { --bg:#0b1020; --card:#151e34; --text:#f5f7ff; --muted:#aeb9d1; --accent:#a6f0d4; --border:#2c3956; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--text); background:radial-gradient(ellipse at 80% 0%,#223659 0%,var(--bg) 52%); line-height:1.65; }
+    .container { width:min(1050px,calc(100% - 36px)); margin:auto; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:18px; padding:24px 0; }
+    .brand { font-weight:800; font-size:20px; letter-spacing:-.03em; color:var(--accent); }
+    nav { display:flex; flex-wrap:wrap; gap:14px; }
+    a { color:var(--accent); }
+    nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+    nav a:hover, a:hover { color:white; }
+    .hero { padding:76px 0 82px; }
+    .tag { display:inline-block; color:var(--accent); background:#a6f0d416; padding:6px 13px; border:1px solid #a6f0d43d; border-radius:99px; font-size:14px; }
+    h1 { font-size:clamp(40px,7vw,76px); line-height:1.08; margin:20px 0; letter-spacing:-.05em; }
+    h1 span { color:var(--accent); }
+    .hero p { max-width:670px; font-size:19px; color:var(--muted); }
+    .button { display:inline-block; padding:12px 20px; background:var(--accent); color:#10221b; text-decoration:none; border-radius:12px; font-weight:700; margin-top:14px; }
+    .button:hover { color:#10221b; background:#d3ffef; }
+    section { padding:12px 0 40px; scroll-margin-top:20px; }
+    h2 { margin:0 0 18px; font-size:29px; letter-spacing:-.03em; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:18px; padding:24px; }
+    .card h3 { margin:0 0 8px; font-size:19px; }
+    .card p, .card li { color:var(--muted); }
+    .card p { margin:0; }
+    .chips { display:flex; flex-wrap:wrap; gap:10px; }
+    .chip { border:1px solid #527064; color:#c7f6e5; padding:8px 14px; border-radius:30px; background:#a6f0d410; }
+    footer { border-top:1px solid var(--border); padding:25px 0 35px; color:var(--muted); font-size:14px; }
+    @media (max-width:650px) { header { align-items:flex-start; flex-direction:column; } .hero { padding:45px 0 55px; } .grid { grid-template-columns:1fr; } .card { padding:20px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">&lt;my.portfolio /&gt;</div>
+      <nav aria-label="Навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <span class="tag">Моё портфолио • 2026</span>
+        <h1>Привет! Я <span>Илья.</span></h1>
+        <p>Я учусь создавать сайты и развиваюсь в веб-разработке. Здесь собраны мои навыки, учебные проекты и достижения.</p>
+        <a class="button" href="#projects">Посмотреть проекты →</a>
+      </div>
+
+      <section id="about">
+        <h2>Обо мне</h2>
+        <div class="card">
+          <p>Закончил школу с золотой медалью, смог поступить в Вышую школу экономики в Питере. 
+            Мне нравится изучать технологии, придумывать удобные интерфейсы и воплощать идеи в коде. Сейчас я практикую HTML, CSS и работу с GitHub. Хочу научиться разрабатывать красивые и полезные веб-приложения.</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Мои навыки</h2>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Работа в команде</span>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Проекты и опыт</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>🌐 Сайт-портфолио</h3>
+            <p>Мой учебный проект: персональная страница, оформленная с помощью HTML и CSS и размещённая на GitHub Pages.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Мой следующий проект</h3>
+            <!-- Замените пример реальным проектом, если он есть. -->
+            <p>Здесь я расскажу о другой учебной работе: какую задачу решал(а), какие инструменты использовал(а) и чему научился(ась).</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="achievements">
+        <h2>Образование и достижения</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>📚 Образование</h3>
+            <p>Изучаю программирование и веб-технологии. </p>
+          </div>
+          <div class="card">
+            <h3>🏆 Достижения</h3>
+            <p>Создание и публикация первого портфолио. </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <h2>Контакты</h2>
+        <div class="card">
+          <p>Мои проекты можно найти на GitHub. <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Перейти на GitHub ↗</a></p>
+          <!-- Лучше заменить https://github.com/ на https://github.com/ВАШ_ЛОГИН -->
+        </div>
+      </section>
+    </main>
+
+    <footer>Сделано с интересом к веб-разработке ✨</footer>
+  </div>
+</body>
+</html>
